@@ -1,4 +1,4 @@
-// ✅ Animation des barres de compétences au chargement
+// Animation des barres de compétences au chargement
 window.addEventListener('load', () => {
   document.querySelectorAll('.fill').forEach(bar => {
     const targetWidth = bar.style.width;
@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
   });
 });
 
-// ✅ Défilement fluide vers les sections via les liens de navigation
+// Défilement fluide vers les sections via les liens de navigation
 document.querySelectorAll('nav a, .cta').forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();
@@ -21,15 +21,15 @@ document.querySelectorAll('nav a, .cta').forEach(link => {
   });
 });
 
-// ✅ Action au clic sur les boutons "Voir" des projets
+// Action au clic sur les boutons "Voir" des projets
 document.querySelectorAll('.voir-btn').forEach(button => {
   button.addEventListener('click', () => {
     alert("Redirection vers le projet...");
-    // Tu peux remplacer l'alerte par window.location.href = "URL_du_projet";
+    
   });
 });
 
-// ✅ Validation du formulaire de contact
+// Validation du formulaire de contact
 document.getElementById("formulaire").addEventListener("submit", function(e) {
   e.preventDefault();
 
