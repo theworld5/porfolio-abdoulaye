@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio personnel</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js"></script>
+</head>
+<body>
+
+    <!-- En-tête de la page -->
+    <header>
+    <div class="logo">
+      <span class="nom">CAMARA</span> 
+      <span class="prenom"> ABDOULAYE</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <!-- Section d'accueil -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Je suis ABDOULAYE, Développeur en devenir<br>passionné par le web et le design !</h1>
+      <a href="#projets" class="cta">Voir mes projets</a>
+    </div>
+    <div class="hero-image">
+      <!-- Illustration fictive -->
+      <img src="images/deve.webp" alt="Illustration développeurs">
+    </div>
+  </section>
+
+  <!-- Section À propos -->
+  <section class="apropos" id="apropos">
+    <h2>À propos</h2>
+    <div class="apropos-content">
+      <img src="images/Photo.JPG" alt="Photo">
+      <div class="text">
+        <p>Je m'appelle ABDOULAYE, passionné par la création de sites web modernes et interactifs.</p>
+        <p>Je suis actuellement étudiant(e) en développement web, et je cherche à améliorer mes compétences en JavaScript, HTML et CSS.</p>
+        <p>J’adore transformer mes idées en projets concrets et expérimenter avec les nouvelles technologies.</p>
+        <a href="cv.pdf" download class="cv-button">Télécharger mon CV</a>
+      </div>
+    </div>
+  </section>
+
+   <section id="projets">
+    <h2>Mes Projets</h2>
+    <div class="projets-container">
+      <div class="projet-card">
+        <p>1 - Site web de la Bibliothèque municipale de port-cartier</p>
+        <p>Développé un système de gestion de bibliothèque en 
+            utilisant HTML, CSS JAVASCRIPT et PHP.</p>
+            <p>Implémenté des fonctionnalités telles que la gestion<br>des emprunts, des retours et des réservations de livres.</p>
+            <p>Utilisé MySQL pour la gestion de la base de données.</p>
+    
+        <button class="voir-btn">Voir</button>
+      </div>
+      <div class="projet-card">
+        <p>2 - Simulateur de guichet automatique.</p>
+        <p>Développé une application prototype simulant le fonctionnement d'un guichet automatique en Java.</p>
+        <p>Implémenté des fonctionnalités telles que le dépôt, le retrait, le transfert et le paiement de factures.</p>
+        <p>Utilisé MySQL pour l'enregistrement des différents transaction effectuées.</p>
+        <button class="voir-btn">Voir</button>
+      </div>
+      <div class="projet-card">
+        <p>3 - Développement d'un site web e-commerce personnalisé</p>
+        <p>Développé une plateforme de vente en ligne avec OpenCart, PHP, MySQL, HTML5, CSS et JavaScript.</p>
+        <p>Implémenté des fonctionnalités telles que la gestion des paiements (PayPal et carte de crédit)</p>
+        <p>Mise en place d'un module d'expédition avancé (standard, express, livraison gratuite).</p>
+        <button class="voir-btn">Voir</button>
+      </div>
+    </div>
+    
+  </section>
+
+    <!-- Section Compétences -->
+      <section id="competences">
+    <h2>Mes Compétences</h2>
+    <div class="skills-container">
+      
+      <!-- Soft Skills -->
+      <div class="skills-block">
+        <h3>Soft Skills</h3>
+        <div class="skill">
+          <label>Adaptabilité</label>
+          <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+          <label>Résolution de problème</label>
+          <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill">
+          <label>Travail d'équipe</label>
+          <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+        </div>
+
+        <div class="skill">
+          <label>Communication</label>
+          <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+        </div>
+
+        <div class="skill">
+          <label>Curiosité</label>
+          <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+        </div>
+      </div>
+
+      <!-- Hard Skills -->
+      <div class="skills-block">
+        <h3>Hard Skills</h3>
+        <div class="skill">
+          <label>HTML</label>
+          <div class="bar"><div class="fill" style="width: 95%;"></div></div>
+        </div>
+        <div class="skill">
+          <label>CSS</label>
+          <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+          <label>JavaScript</label>
+          <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill">
+          <label>VS Code</label>
+          <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+        </div>
+      </div>
+
+    </div>
+    
+  </section>
+
+    <!-- Section Contact -->
+   
+  <section id="contact">
+    <h2>Vous avez un projet en tête ?<br>N'hésitez pas à me contacter</h2>
+    <form id="formulaire">
+      <input type="text" id="prenom" placeholder="Votre prénom" required>
+      <input type="text" id="nom" placeholder="Votre nom" required>
+      <input type="text" id="sujet" placeholder="Votre sujet" required>
+      <textarea id="message" placeholder="Écrivez votre message ici !" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Designed by [Prénom] with HTML CSS JS</p>
+    <p>Tous droits réservés - 2025</p>
+  </footer>
+   
+    
+</body>
+</html>
